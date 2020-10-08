@@ -1,7 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function countCats(arrayCats) {
-  throw new CustomError('Not implemented');  //!: Delete this!!
 
   const cat = '^^';
 

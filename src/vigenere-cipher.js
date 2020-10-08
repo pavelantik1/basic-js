@@ -18,7 +18,6 @@ class VigenereCipheringMachine {
   }
 
   encrypt(message, key) {
-    throw new CustomError('Not implemented');
     if(message === undefined || key === undefined ) throw new Error;
     key = this.increaseKeyLength(message, key);
     message = message.toUpperCase();
@@ -44,7 +43,6 @@ class VigenereCipheringMachine {
   
   
   decrypt(message, key) {
-    throw new CustomError('Not implemented');
     if(message === undefined || key === undefined ) throw new Error;    
     key = this.increaseKeyLength(message, key);
     key = this.increaseKeyLength(message, key);

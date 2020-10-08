@@ -2,7 +2,6 @@ const CustomError = require("../extensions/custom-error");
 
 module.exports = function transform(arr) {
   const controls = ['--discard-next', '--discard-prev', '--double-next', '--double-prev']
-  throw new CustomError('Not implemented');
  
   if (!Array.isArray(arr)) throw new Error;
   if ( arr.length === 0 ) return [];
